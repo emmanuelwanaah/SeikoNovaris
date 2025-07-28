@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   
+    <script src="https://www.paypal.com/sdk/js?client-id=ASblkoRjeBg9043jLhY4LUikh8XjGYjBYTYjBr4ESgHRJqq7wro-oBnuIi8-XS94Mscd76Wy7nnPvE6C&currency=EUR"></script>
+
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Seiko Novare</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> Seiko
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <!-- <div class="cart-icon-wrapper">
+                        <i class='bx bx-shopping-bag'></i>
+                        <span class="cart-count-badge" id="cart-count-badge">0</span>
+                    </div> -->
+                </div>
+                
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+ <!--==================== CART ====================-->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+         <!--==================== successmessage ====================-->
+    <!--==================== PAYMENT SUCCESS MESSAGE ====================-->
+<section class="section container">
+    <div class="payment-success" >
+        <i class='bx bx-check-circle'></i>
+        <h2 >Thank you for your purchase!</h2>
+        <p >
+            Your payment was successful. A confirmation email has been sent to your PayPal address.
+        </p>
+        <p >
+            You’ll be notified shortly with your order details. Stay tuned!
+        </p>
+        <a href="index.html#products" class="button">
+            Continue Shopping
+        </a>
+    </div>
+</section>
+
+      
+      <!--==================== NEW ====================-->
+<section class="new section container" id="new">
+<h2 class="section__title">New Arrivals</h2>
+
+<div class="new__container">
+    <div class="swiper new-swiper">
+        <div class="swiper-wrapper">
+
+            <article class="new__card swiper-slide">
+                <span class="new__tag">New</span>
+
+                <img src="assets/img/new1.png" alt="Longines rose" class="new__img">
+
+                <div class="new__data">
+                    <h3 class="new__title">Longines rose</h3>
+                    <span class="new__price">$980</span>
+                </div>
+
+                <button class="button new__button add-to-cart"
+                        data-name="Longines rose"
+                        data-price="980"
+                        data-img="assets/img/new1.png">
+                    ADD TO CART
+                </button>
+            </article>
+
+            <article class="new__card swiper-slide">
+                <span class="new__tag">New</span>
+
+                <img src="assets/img/new2.png" alt="Jazzmaster" class="new__img">
+
+                <div class="new__data">
+                    <h3 class="new__title">Jazzmaster</h3>
+                    <span class="new__price">$1150</span>
+                </div>
+
+                <button class="button new__button add-to-cart"
+                        data-name="Jazzmaster"
+                        data-price="1150"
+                        data-img="assets/img/new2.png">
+                    ADD TO CART
+                </button>
+            </article>
+
+            <article class="new__card swiper-slide">
+                <span class="new__tag">New</span>
+
+                <img src="assets/img/new3.png" alt="Dreyfuss gold" class="new__img">
+
+                <div class="new__data">
+                    <h3 class="new__title">Dreyfuss gold</h3>
+                    <span class="new__price">$750</span>
+                </div>
+
+                <button class="button new__button add-to-cart"
+                        data-name="Dreyfuss gold"
+                        data-price="750"
+                        data-img="assets/img/new3.png">
+                    ADD TO CART
+                </button>
+            </article>
+
+            <article class="new__card swiper-slide">
+                <span class="new__tag">New</span>
+
+                <img src="assets/img/new4.png" alt="Portuguese rose" class="new__img">
+
+                <div class="new__data">
+                    <h3 class="new__title">Portuguese rose</h3>
+                    <span class="new__price">$1590</span>
+                </div>
+
+                <button class="button new__button add-to-cart"
+                        data-name="Portuguese rose"
+                        data-price="1590"
+                        data-img="assets/img/new4.png">
+                    ADD TO CART
+                </button>
+            </article>       
+
+        </div>
+    </div>
+</div>
+</section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="newsletter__description">
+                        Don't miss out on your discounts. Subscribe to our email 
+                        newsletter to get the best offers, discounts, coupons, 
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="https://formspree.io/f/xjkorvkj" method="post" class="newsletter__subscribe">
+                    <input name="email" type="email" placeholder="Enter your email" class="newsletter__input">
+
+                    <button class="button" type="submit">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>France</li>
+                    <li>Nemours</li>
+                    <li>+33 6 46 92 69 33</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Road bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Mountain bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Electric</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Seiko Novare. All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+ </body>
+</html>
